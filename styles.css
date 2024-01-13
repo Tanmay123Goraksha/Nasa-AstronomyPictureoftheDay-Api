@@ -1,0 +1,69 @@
+body {
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAAAwFBMVEUAAAADBQUGCAgXHR5IW1oGCwoMERAQFRQfKCgVGxwGBgYLEA8LDQ0GBwgkLS0mMTA7S0tDVlUSGBYcJCIRFRcrNzYNEBM1R0QtOjk1QUAnMjM/VVNAUVBreHkhJyhxfX5RZWQXHhwyODeaoZ8bIiOTnJ1MV1eBiYx4hYU6RkZkcHBUYGGbpqghKSwaHyKIlpeqs7VIXllUbGlGTEyPk5azuLpuc3JecnGjrKxRZGezubw/TlN/gYWTk5icnJ1ba2uOApqHAAADo0lEQVR4nO3b6XbiRhCG4WkQEloQWlgkEIsINkgsxvZMcDwz4f7vaqrFyb/Gnn92kve5Ap3vVFdXd8OXLwAAAMD/mlIf/QX/Gkp4nkdi79NJdURLkda7lGoFvm/bgc7roz/mk5OsOraTJInj+Lq6Pvp7PjPPawW2U5ZpmpaJE7Q80rpNCst3JKpu2O+u24OgQ23dplTHTsrVH0MhcQ1sVuJtTVhpd7V/zvNsGK7dUa9HWjdcwwqHw7v78Thv0gp6NC4zCct31t1hnm3qcZTLUpTGxQhxg54cynSSVflmO47GmU5r1PO8j/6uz0lmUqfsSlrVbBtFVT6UNj+izZvpCT7RCzGK6rtpUV0bFyOEmfJ0WuE1raiI8myydvXE9dEf9inJFD8aNLVVFPtdXFTZ5NAe+CxFI6V6I3cdTiQta3+ZTqNsct0USctA9XRaB51WcTebxtG1zTOfGqmerMSjTiuOHzZxXOg2P7AZIYyU7lvt7jWtbawbV3hMghZpGakmrb5Oa3ZnWTJDTLqlzTRvJl1+0J7r2npc7HdWMZY2XzodRggjndZR0qpiqz5dHps233Z8astI9QLdt7Iotpb7+tEq9KaY+NSWkfI6trvu67R2+22Tlt4UOfsYKRXo661MVqL18mBZcZX1U5fGZdZcBq7DbFxY1sPDo6Ub17x0mOaN9AuGPlZXktZ2s1xaU1mKJY3rBk/fnYbDXKd1Wi4f5ajYTxM2RTPVkk3xoNNazk7np6UMqKtuwiuZkdIjxFGOPoX1NPu2qOt697yau9zZmEnfstvXtM6vXxebWZOWHfDsY6KfMVwZ5oul1Nb+ZfPnLlod2oOAOxsTz/snrfPs5bT5Wt9X+uzTobZM9MDlzofj6fK8ePm2OD9ZVRbKwEVaJjJw2W63P57+dZndvZ4lrSIPU5sJwqipre4w/767nLevs1l9uV/NBwFhGemnfVf2xO+yJy5Omx8/ds/hkffXG5qBS19CWNK4Xn/+XRerNc+vt+iVOEjDLIqXl/r0877I1tLiuZa/QcbTwTrM5Fh92X3d5BMJi8q6yev5zatPVcTRYnU4EtZbpG+N3LQ/ybJsEqYuv6N8k1KBn6znhzA8pKXDz7/fpu8DbddtH9uJ3WEzfI+cq33bdhy702KCf5dMXM3/e3r8wee3NP8dI6vfRlAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOC/7Re+6kwvOKzeWwAAAABJRU5ErkJggg==') fixed; /* Replace 'starry-night.jpg' with your starry night background image */
+    animation: shootingStars 10s infinite linear; 
+    transition: background-color 0.5s ease;
+}
+
+@keyframes shootingStars {
+    0%, 100% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+}
+
+
+.heading {
+    text-align: center;
+    font-size: 40px;
+    color: #3498db;
+}
+
+.dateForm {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.date {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #2ecc71;
+}
+
+.title {
+    text-align: center;
+    color: #e74c3c;
+}
+
+.image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 5px;
+    position: relative;
+    animation: moveBorder 3s infinite alternate;
+}
+
+.image:hover {
+    border-color: #3498db;
+    box-shadow: 0 0 10px #3498db;
+}
+
+@keyframes moveBorder {
+    from {
+        border-color: #00ff00;
+        box-shadow: 0 0 10px #00ff00;
+    }
+    to {
+        border-color: #ff0000;
+        box-shadow: 0 0 10px #ff0000;
+    }
+}
+
+.explanation {
+    text-align: center;
+    color: whitesmoke;
+}
